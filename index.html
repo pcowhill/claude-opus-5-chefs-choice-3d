@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e0b08'/%3E%3Cpath d='M8 40 L14 52 Q32 58 50 52 L56 40 Z' fill='%23c08a3e'/%3E%3Ccircle cx='40' cy='24' r='7' fill='%23f5cd76'/%3E%3Cpath d='M20 30 L40 24' stroke='%23ece0c6' stroke-width='4'/%3E%3C/svg%3E" />
+    <title>SALVO — your cannon is your only oar</title>
+    <meta
+      name="description"
+      content="A 3D arcade sea-survival game. Firing the gun is the only way your boat moves."
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="gl"></canvas>
+      <div id="ui">
+        <div id="flash-drown"></div>
+        <div id="flash-damage"></div>
+        <div id="flash-white"></div>
+        <div id="vignette"></div>
+        <div id="grain"></div>
+      </div>
+      <div id="boot">
+        <div class="inner">
+          <div class="mark">SALVO</div>
+          <div class="bar"><i id="boot-bar"></i></div>
+          <div class="msg" id="boot-msg">MAKING READY</div>
+        </div>
+      </div>
+      <div id="fatal">
+        <div class="box">
+          <h2>DEAD IN THE WATER</h2>
+          <p id="fatal-msg">
+            The game could not start. This usually means WebGL is unavailable or blocked in this
+            browser. Try a desktop Chrome, Edge, Firefox or Safari window with hardware acceleration
+            enabled.
+          </p>
+          <code id="fatal-detail"></code>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
