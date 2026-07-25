@@ -159,4 +159,9 @@ Playwright, at 1920×1080, 1280×720, 760×440 and 480×280.
 
 - Repository: `pcowhill/claude-opus-5-chefs-choice-3d`
 - Branch: `claude/3d-browser-game-cnrd48`
-- Commit: recorded in the final response (single commit containing the whole project).
+- Commit: `551b8df0d5db5e2681f5bf2cc94fbd373374f4cb` — the whole project in one commit.
+  (This notes file carries one follow-up commit recording that hash.)
+
+The committed tree was re-verified from scratch: exported clean, `npm install` →
+`npm run build` → `vite preview`, then loaded in headless Chromium — boots, enters
+gameplay, zero console or page errors.
